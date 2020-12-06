@@ -32,7 +32,11 @@ Bloody Roar has a code to enable debug mode during matches in-game:
 
 When this code is enabled, there also appears to be an **extended** debug menu. You can get to it by highlighting Options in the main menu, hold `L + R`, and hit `A`. For all of the functionality to work you'll need to use an unpacked version of the game, i.e. all fpack files have been decompressed.
 
-When you hit `Start` in this menu, it will bring up the debug menu. If a different menu is desired, instead use one of the following codes:
+When you hit `Start` in this menu, it will bring up the debug menu.
+
+![Debug Menu Pause](/debug_menu_pause.PNG?raw=true "Debug Menu Pause")
+
+If a different menu is desired, instead use one of the following codes:
 
 ### Training Mode Pause
 
@@ -41,6 +45,8 @@ When you hit `Start` in this menu, it will bring up the debug menu. If a differe
 0400ad14 4804207d
 ```
 
+![Training Mode Pause](/training_mode_pause.PNG?raw=true "Training Mode Pause")
+
 ### Battle Mode Pause
 
 ```gecko
@@ -48,9 +54,13 @@ When you hit `Start` in this menu, it will bring up the debug menu. If a differe
 0400ad14 480419d1
 ```
 
+![Battle Mode Pause](/battle_mode_pause.PNG?raw=true "Battle Mode Pause")
+
 ### No Menu Pause
 
 ```gecko
 0405aedc 60000000
 0400ad14 60000000
 ```
+
+![No Menu Pause](/no_menu_pause.PNG?raw=true "No Menu Pause")
