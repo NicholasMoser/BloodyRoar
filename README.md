@@ -36,9 +36,88 @@ When you hit `Start` in this menu, it will bring up the debug menu.
 
 ![Debug Menu Pause](/debug_menu_pause.PNG?raw=true "Debug Menu Pause")
 
-If a different menu is desired, instead use one of the following codes:
+If a different menu is desired, see the codes below:
 
-### Training Mode Pause
+- [Training Mode Pause](#training-mode-pause)
+- [Battle Mode Pause](#battle-mode-pause)
+- [No Menu Pause](#no-menu-pause)
+
+### Features
+
+- [NORMAL TEST](#normal-test)
+- [GAME TEST](#game-test)
+- [FACE EDIT](#face-edit)
+- [SEQ EDIT](#seq-edit)
+- [TXG VIEWER](#txg-viewer)
+- [MEMORY CARD](#txg-viewer)
+- [MOVIE TEST](#movie-test)
+
+### Normal Test
+
+This mode has no practical purpose, it likely was an early test demo.
+
+### Game Test
+
+This mode contains some functionality
+
+It is recommended to change **DEBUG** to 0 on the second menu so that the screen isn't blocked by CPU/RAM data.
+
+- `Z + B` = Bone Control
+- `Z + Y` = Nothing (Calls method at 800974e4)
+- `Z + C-stick up` = Invert colors
+- `Z + C-stick down` = Normal colors (revert inverted colors)
+- `Z + C-stick left` = Add blur
+- `Z + c-stick right` = Add spiral blur
+- `C-stick up` = Restart match and show battle intro
+- `C-stick down` = Restart match
+- `C-stick left` = P1 win animation
+- `C-stick right` = P2 win animation
+
+### Face Edit
+
+It is recommended to change **DEBUG** to 0 on the second menu so that the screen isn't blocked by CPU/RAM data.
+
+When in the FACE EDIT menu in-game, `L` and `R` will zoom in and out. Once you hit EDIT, `L` will bring up a [face animation tester](https://imgur.com/a/GTtPXFZ).
+
+- `Z + B` = Bone Control
+- `Z + Y` = Face Edit
+- `Z + C-stick up` = Invert colors
+- `Z + C-stick down` = Normal colors (revert inverted colors)
+- `Z + C-stick left` = Add blur
+- `Z + c-stick right` = Add spiral blur
+- `C-stick up` = Restart match and show battle intro
+- `C-stick down` = Restart match
+
+### SEQ Edit
+
+Doesn't appear to have any additional functionality.
+
+- `Z + B` = Bone Control
+- `Z + Y` = Nothing (Calls method at 800974e4)
+- `Z + C-stick up` = Invert colors
+- `Z + C-stick down` = Normal colors (revert inverted colors)
+- `Z + C-stick left` = Add blur
+- `Z + c-stick right` = Add spiral blur
+- `C-stick up` = Restart match and show battle intro
+- `C-stick down` = Restart match
+- `C-stick left` = P1 win animation
+- `C-stick right` = P2 win animation
+
+### TXG Viewer
+
+A viewer for TXG texture files.
+
+### Memory Card
+
+Allows you to read and write to the GameCube memory card.
+
+### Movie Test
+
+Allows you to play the h4m movies contained in the game.
+
+### Other Pause Menus
+
+#### Training Mode Pause
 
 ```gecko
 0405aedc 60000000
@@ -47,7 +126,7 @@ If a different menu is desired, instead use one of the following codes:
 
 ![Training Mode Pause](/training_mode_pause.PNG?raw=true "Training Mode Pause")
 
-### Battle Mode Pause
+#### Battle Mode Pause
 
 ```gecko
 0405aedc 60000000
@@ -56,7 +135,7 @@ If a different menu is desired, instead use one of the following codes:
 
 ![Battle Mode Pause](/battle_mode_pause.PNG?raw=true "Battle Mode Pause")
 
-### No Menu Pause
+#### No Menu Pause
 
 ```gecko
 0405aedc 60000000
